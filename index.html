@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A clean, responsive vanilla JavaScript calculator.">
+  <title>Orbit Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calculator-header">
+        <div>
+          <p class="eyebrow">Everyday arithmetic</p>
+          <h1>Orbit <span>Calculator</span></h1>
+        </div>
+        <div class="status-dot" aria-hidden="true"></div>
+      </header>
+
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <p class="display-label">Expression</p>
+        <p class="expression" id="expression">0</p>
+        <p class="result" id="result">0</p>
+      </div>
+
+      <div class="keypad" id="keypad">
+        <button class="key key-control" type="button" data-action="clear">C</button>
+        <button class="key key-control" type="button" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button class="key key-operator" type="button" data-value="÷" aria-label="Divide">÷</button>
+        <button class="key key-operator" type="button" data-value="×" aria-label="Multiply">×</button>
+
+        <button class="key" type="button" data-value="7">7</button>
+        <button class="key" type="button" data-value="8">8</button>
+        <button class="key" type="button" data-value="9">9</button>
+        <button class="key key-operator" type="button" data-value="-" aria-label="Subtract">−</button>
+
+        <button class="key" type="button" data-value="4">4</button>
+        <button class="key" type="button" data-value="5">5</button>
+        <button class="key" type="button" data-value="6">6</button>
+        <button class="key key-operator" type="button" data-value="+" aria-label="Add">+</button>
+
+        <button class="key" type="button" data-value="1">1</button>
+        <button class="key" type="button" data-value="2">2</button>
+        <button class="key" type="button" data-value="3">3</button>
+        <button class="key key-equals" type="button" data-action="equals" aria-label="Equals">=</button>
+
+        <button class="key key-zero" type="button" data-value="0">0</button>
+        <button class="key" type="button" data-value=".">.</button>
+      </div>
+
+      <footer class="calculator-footer">
+        <span>Vanilla JavaScript</span>
+        <span>Ready when you are</span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
